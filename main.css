@@ -1,7 +1,7 @@
 body {
-	background: #e2e2e2;
+	background: #04A1BF;
 	text-align: center;
-	font-family: 'Poppins', Arial, Helvetica, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .intro {
@@ -10,10 +10,9 @@ body {
 }
 
 h1 {
-	color: #04A1BF;
+	color: #ffffff;
 	text-transform: uppercase;
 	font-weight: 800;
-	font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 p {
@@ -22,11 +21,11 @@ p {
 
 #first {
 	margin-top: 10px;
-	color: #ff905d;
+	color: #FFCD5D;
 }
 
 #second {
-	color: #5172df;
+	color: #51DF70;
 
 }
 
