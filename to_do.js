@@ -1,7 +1,7 @@
 var enterButton = document.getElementById("enter");
 var input = document.getElementById("userInput");
 var ul = document.querySelector("ul");
-var item = documnet.getElementsByTagName("li");
+var item = document.getElementsByTagName("li");
 
 function inputLength() {
   return input.value.length;
@@ -17,29 +17,32 @@ function createListElement() {
   ul.appendChild(li); //adds li to ul
   input.value = ""; //Reset text input field
 
-  //STRIKETHROUGH Feature
+
+  //START STRIKETHROUGH
   // because it's in the function, it only adds it for new items
   function crossOut() {
     li.classList.toggle("done");
   }
 
   li.addEventListener("click", crossOut);
+  //END STRIKETHROUGH
 
 
-
-  // DELETE BUTTON Feature
+  // START ADD DELETE BUTTON
   var dBtn = document.createElement("button");
   dBtn.appendChild(document.createTextNode("X"));
   li.appendChild(dBtn);
   dBtn.addEventListener("click", deleteListItem);
+  // END ADD DELETE BUTTON
 
 
-  //CLASS DELETE (DISPLAY: NONE)
+  //ADD CLASS DELETE (DISPLAY: NONE)
   function deleteListItem() {
     li.classList.add("delete")
   }
-
+  //END ADD CLASS DELETE
 }
+
 
 function addListAfterClick() {
   if (inputLength() > 0) { //makes sure that an empty input field doesn't create a li
@@ -54,6 +57,9 @@ function addListAfterKeypress(event) {
   }
 }
 
+
 enterButton.addEventListener("click", addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
+
+
