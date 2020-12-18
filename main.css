@@ -39,7 +39,6 @@ p {
 	margin-bottom: 30px;
 }
 
-
 #enter {
 	border: none;
 	padding: 5px 15px;
@@ -63,7 +62,6 @@ ul {
 	text-align: left;
 	margin-top: 20px;
 }
-
 
 li {
 	list-style: none;
@@ -101,7 +99,6 @@ input {
 	padding: 5px;
 	border: none;
 }
-
 
 .done {
 	background: #6bd482 !important;
